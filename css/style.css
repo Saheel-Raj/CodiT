@@ -619,9 +619,6 @@ form textarea {
         height: auto;
         max-width: 100%;
     }
-    .theme{
-        margin-right: -280px;
-    }
 }
 
 @media (max-width: 840px){
