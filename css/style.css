@@ -29,10 +29,6 @@
     width: 20px;
     cursor: pointer;
 }
-.navlist ul li a{
-    flex: 1;
-    text-align: right;
-}
 ::-webkit-scrollbar{
   width: 0.50rem;
   background: transparent;
