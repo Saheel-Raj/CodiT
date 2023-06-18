@@ -29,6 +29,10 @@
     width: 20px;
     cursor: pointer;
 }
+.navlist ul li a{
+    flex: 1;
+    text-align: right;
+}
 ::-webkit-scrollbar{
   width: 0.50rem;
   background: transparent;
@@ -216,149 +220,10 @@ header.sticky{
     line-height: 1.8;
     margin-bottom: 4rem;
 }
-.container-skill {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    padding: 85px 10%;
+/**/
+.services{
     background: var(--bg-color);
 }
-.container-skill .main-title-skill {
-    max-width: 700px;
-    margin: 0px auto;
-    text-align: center;
-    font-family: helvetica;
-}
-.container-skill .main-title-skill h1 {
-    position: relative;
-    font-size: 40px;
-    color: var(--text-color);
-    margin-bottom: 30px;
-    display: inline-block;
-    transition: all 0.45s ease;
-}
-.container-skill .main-title-skill h1:hover::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    top: 125%;
-    left: 0;
-    background-color: #4eb03f;
-}
-.container-skill .main-title-skill h1:hover::after {
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 3px;
-    background-color: #7cfc00;
-    top: calc(125% - 1px);
-    left: 50%;
-    transform: translateX(-50%);
-}
-.main-title-skill p {
-    color: var(--text-color);
-}
-.main-title-skill p a {
-    color: var(--second-color);
-}
-.container-skill .row-skill {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-}
-.row-skill .col-skill {
-    flex-basis: 50%;
-}
-.row-skill .sub-title-skill h2 {
-    position: relative;
-    color: var(--main-color);
-    font-size: 22px;
-    font-family: helvetica;
-    display: inline-block;
-    margin-bottom: 30px;
-}
-.row-skill .sub-title-skill h2::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    top: calc(125% - 1px);
-    left: 0;
-    background-color: var(--text-color);
-}
-.subject {
-    font-size: 18px;
-    font-weight: thin;
-    color: var(--text-color);
-    padding-bottom: 15px;
-    text-transform: uppercase;
-}
-.progress-bar {
-    position: relative;
-    width: 100%;
-    height: 5px;
-    background-color: var(--second-bg-color);
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-.progress-bar::after {
-    position: absolute;
-    content: attr(value);
-    top: -35px;
-    right: 0;
-    color: var(--text-color);
-    font-size: 18px;
-}
-.progress-line {
-    position: absolute;
-    width: 0%;
-    height: 7px;
-    background-color: var(--main-color);
-    border-radius: 15px;
-    top: -1px;
-    animation: animate 2s cubic-bezier(1, 1, 1, 1) forwards;
-}
-@keyframes animate {
-    100% {
-        width: 100%;
-    }
-}
-.progress-line::after {
-    content: '';
-    position: absolute;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    background-color: var(--main-color);
-}
-@media(max-width: 768px) {
-    .container-skill {
-        padding: 30px 8%;
-    }
-}
-@media(max-width: 568px) {
-    .container-skill .row-skill {
-        flex-direction: column;
-    }
-
-    .container-skill .main-title-skill h1 {
-        font-size: 36px;
-    }
-
-    .container-skill .row-skill {
-        margin-top: 30px;
-    }
-
-    .row-skill .col-skill:nth-child(2) {
-        margin-top: 20px;
-    }
-}
-
 .main-text{
     text-align: center;
 }
@@ -371,7 +236,34 @@ header.sticky{
     font-size: var(--h2-font);
     line-height: 1;
 }
-
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+.box{
+    background: var(--second-bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all 0.45s ease;
+}
+.s-icons i{
+    font-size: 32px;
+    margin-bottom: 20px;    
+}
+.box h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}.box p{
+    color: var(--second-color);
+    font-size: 0.8rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
 /**/
 .more{
     background: var(--second-bg-color);
@@ -443,10 +335,6 @@ header.sticky{
 }
 
 .contact {
-    padding: 20px 15%;
-}
-
-.contact {
     background: var(--bg-color);
     height: 100%;
     width: 100%;
@@ -455,8 +343,9 @@ header.sticky{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    grid-gap: 5rem;
-    margin-top: 10px;
+    grid-gap: 5rem;  
+    margin-top: 20px;
+    padding: 20px 15%;
 }
 
 .contact-form h1 {
