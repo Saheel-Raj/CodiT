@@ -12,11 +12,12 @@
     --second-bg-color: #202020;
     --text-color: #fff;
     --second-color: #ccc;
-    --main-color: #15802c;
+    --main-color: #2a8015; /* main color #15802c */
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
     --background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    /*   original   --background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);*/
 }
 .light-theme{
     --bg-color: #f2efef;
@@ -80,6 +81,7 @@ span{
 }
 .navlist a:hover{
     color: var(--main-color);
+    letter-spacing: 1px;
 }
 .navlist a.active{
     color: var(--main-color);
@@ -183,7 +185,7 @@ section{
     transition: all 0.45s ease;
 }
 .btn2 span i:hover{
-    transform: scale(1.1) translateY(3px);
+    transform: scale(0.9);
 }
 
 header.sticky{
@@ -344,21 +346,22 @@ header.sticky{
     justify-content: center;
     flex-direction: column;
     grid-gap: 5rem;  
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 20px 15%;
 }
 
 .contact-form h1 {
-    font-size: 70px;
+    font-size: var(--h2-font);
     color: var(--text-color);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .contact-form p {
     color: var(--second-color);
     letter-spacing: 1px;
     line-height: 26px;
-    font-size: 1.1rem;
+    font-size: var(--p-font);
     margin-bottom: 3rem;
 }
 
@@ -457,6 +460,14 @@ form textarea {
     background: var(--main-color);
 }
 
+.notice{
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    border-bottom: 2px solid var(--bg-color);
+}
 /*media queries*/
 
 @media (max-width: 1268px){
@@ -473,6 +484,10 @@ form textarea {
     }
     .end{
         padding: 15px 3%;
+    }
+    .notice{
+        padding: 15px 3%;
+        font-size: 0.8em;
     }
 }
 
@@ -549,4 +564,12 @@ form textarea {
         line-height: 1.8;
         color: var(--text-color);
     }
+}
+.colormenu{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background: #000000;
+    border: none;
+    padding: 8px;
 }
