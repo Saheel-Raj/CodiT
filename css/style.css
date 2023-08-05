@@ -12,7 +12,7 @@
     --second-bg-color: #202020;
     --text-color: #fff;
     --second-color: #ccc;
-    --main-color: #2a8015; /* main color #15802c */
+    --main-color: #167600; /* main color #15802c */
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
@@ -26,13 +26,10 @@
     --second-color: #322f2f;
     --background: none;
 }
+
 #theme-icon{
     width: 20px;
     cursor: pointer;
-}
-.navlist ul li a{
-    flex: 1;
-    text-align: right;
 }
 ::-webkit-scrollbar{
   width: 0.50rem;
@@ -102,7 +99,6 @@ section{
     height: 100vh;
     width: 100%;
     background-image: var(--background);
-    background-image: #fff;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -443,7 +439,7 @@ form textarea {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 2rem;
     background: var(--second-bg-color);
 }
@@ -573,3 +569,41 @@ form textarea {
     border: none;
     padding: 8px;
 }
+
+/* tosc */
+
+.container-speach {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  textarea {
+    width: 100%;
+    height: 180px;
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 10px 15px;
+    resize: none;
+    outline: none;
+    border: 1px solid var(--second-bg-color);
+  }
+  button {
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  button:hover {
+    background: #15802c;
+  }
+  
