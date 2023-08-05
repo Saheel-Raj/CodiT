@@ -6,6 +6,7 @@
 	<title>Saheel.com</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/tos.css">
     <link rel="stylesheet" type="text/css" href="css/load.css">
 	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -63,7 +64,7 @@
 
      	<div class="about-text">
      		<h2>About<span>Me</span></h2>
-     		<p>Hi I am <span>Saheel Raj Prasad</span>...<br><br>With experience in web design. I maintain a healthy balance between functionally, studies and visual inmpact in all my work. I believe that every place of design can be a works of art. <br><br>I love my art and enjoy each new project as I made it. Feel free to have a look at my portfilo and don't hesitate to contact me if I can be of service to you. Thanks for viewing bye!</p>
+     		<p>Hi I am <span>Saheel Raj Prasad</span>...<br><br>With experience in web design. I maintain a healthy balance between functionally, studies and visual inmpact in all my work. I believe that every place of design can be a works of art. <br><br>I love my art and enjoy each new project as I made it. Feel free to have a look at my portfilo and don't hesitate to contact me if you can be of service to you. Thanks for viewing bye!</p>
      		<a href="#services" class="btn">Services</a>
      	</div>
      </section>
@@ -94,8 +95,8 @@
         </div>
         <br>
         <div class="colpic">
-            <h5>Colour Picker</h5><br>
-            <input type="color" class="colormenu" value="#ffffff">
+            <h5>Colour Picker (only for pc)</h5><br>
+            <input type="color" class="colormenu" value="#ffffff" title="for pc">
         </div>
 
     </section>
@@ -106,7 +107,30 @@
      		<p>More</p>
      		<h2><span>Latest</span> Project</h2>
      	</div>
+
         <div class="morecontainer">
+            <div class="more-content">
+                <div class="row">
+                    <img src="img/game.png">
+                    <div class="layer">
+                        <h5>Games and More</h5>
+                        <p>Play thousands of games without downloading it. Poki is a online gaming website where you can play many games for your wish.</p>
+                        <a href="https://poki.com"><i class='bx bx-game'></i></a>
+                    </div>
+                </div>
+            </div> 
+            
+        <div class="more-content">
+     		<div class="row">
+     			<img src="img/toggle.jpeg">
+     			<div class="layer">
+     				<h5>Toggle</h5>
+     				<p>Toggle is a alternate or my third project of a search engine inspired by Google. You can search anything and it's redirect to Google</p>
+     				<a href="https://saheel-raj.github.io/Toggle/"><i class='bx bx-link-external'></i></a>
+     			</div>
+     		</div>
+     	</div>
+
      	<div class="more-content">
      		<div class="row">
      			<img src="img/note.jpeg">
@@ -118,27 +142,13 @@
      		</div>
      	</div>
 
-     	<div class="more-content">
-     		<div class="row">
-     			<img src="img/toggle.jpeg">
-     			<div class="layer">
-     				<h5>Toggle</h5>
-     				<p>Toggle is a alternate or my third project of a search engine inspired by Google. You can search anything and it's redirect to Google</p>
-     				<a href="https://saheel-raj.github.io/Toggle/"><i class='bx bx-link-external'></i></a>
-     			</div>
-     		</div>
-     	</div>
 
-        <div class="more-content">
-            <div class="row">
-                <img src="img/TOSC.jpeg">
-                <div class="layer">
-                    <h5>Text to Speach Convertor</h5>
-                    <p>It helps you to convert your any words to a speach accurately.</p>
-                    <a href="https://saheel-raj.github.io/tsc/"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
+
+        <div class="container-speach">
+            <textarea  placeholder="Text to Speech Convertor"></textarea>
+            <button>Convert to Speech</button>
         </div>
+
         </div>
      </section>
      <!-- contact-main-->
@@ -178,6 +188,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- ---------------------------------------------------------------------------------->
     <script type="text/javascript" src="js/index.js"></script>
+    
+    <script src="js/tos.js"></script>
 
 </body>
 </html>
