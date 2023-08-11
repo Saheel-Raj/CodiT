@@ -218,6 +218,35 @@ header.sticky{
     line-height: 1.8;
     margin-bottom: 4rem;
 }
+audio::-webkit-media-controls-panel{
+    background-color: #d0d0d0;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-current-time-display{
+    color: #000;
+}
+audio::-webkit-media-controls-time-remaining-display{
+    color: #000;
+}
+audio::-webkit-media-controls-timeline{
+    margin-left: 8px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+}
+audio::-webkit-media-controls-volume-slider{
+    background-color: var(--main-color);
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+audio::-webkit-media-controls-mute-button{
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
 /**/
 .services{
     background: var(--bg-color);
