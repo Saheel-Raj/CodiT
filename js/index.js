@@ -84,6 +84,7 @@ const textToSpeech = () => {
     }
   } else {
     isSpeaking = false;
+    window.speechSynthesis.getVoices()[1];
     button.innerText = "Speaking";
   }
 
