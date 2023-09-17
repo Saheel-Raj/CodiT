@@ -7,7 +7,7 @@ function counter(){
 	    $('.counter').addClass('hide')
 	    $('.preloader').addClass('active')
 	    }
-	},18)
+	},16)
 
   var animData = {
 		wrapper: document.querySelector('#animationWindow'),
@@ -18,7 +18,7 @@ function counter(){
 		path: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/LEGO_loader.json'
 	};
 	var anim = bodymovin.loadAnimation(animData);
-  anim.setSpeed(9);
+  anim.setSpeed(8);
 }
 counter()
 
