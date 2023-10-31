@@ -33,8 +33,8 @@
         <ul class="navlist">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">AboutMe</a></li>
-            <li><a href="#tutorials">Tutorials</a></li>
-            <li><a href="#more">Portfolio</a></li>
+            <!-- <li><a href="#tutorials">Tutorials</a></li> -->
+            <li><a href="#more">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
@@ -65,7 +65,7 @@
     <!-- about-main -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="assets/img/my-photo.jpeg" alt="my-photo">
+            <img src="assets/img/my-photo.jpeg" alt="saheel-photo">
         </div>
 
         <div class="about-text">
@@ -75,13 +75,14 @@
                 design can be a works of art. <br><br>I love my art and enjoy each new project as I made it. Feel free
                 to have a look at my portfilo and don't hesitate to contact me if I can be of service to you. Thanks for
                 viewing bye!</p>
-            <a href="#tutorials" class="btn">Tutorials</a>
+            <!-- <a href="#tutorials" class="btn">Tutorials</a> -->
+            <a href="come.html" class="btn">Tutorials</a>
         </div>
 
     </section>
 
     <!-- tutorials -->
-    <section class="tutorials" id="tutorials">
+    <!-- <section class="tutorials" id="tutorials">
         <div class="main-text">
             <p>Video Tutorials</p>
             <h2>Let's<br><span>Code </span></h2>
@@ -97,13 +98,17 @@
             <input type="color" class="colormenu" value="#15802c" title="for pc">
         </div>
 
-    </section>
+    </section> -->
 
     <!-- more-main -->
     <section class="more" id="more">
         <div class="main-text">
             <p>More</p>
             <h2>Latest <span>Project</span></h2>
+        </div>
+
+        <div class="main-text">
+            <p>with sponsored</p>
         </div>
 
         <div class="morecontainer">
@@ -147,6 +152,48 @@
                     <div class="container-speach">
                         <textarea placeholder="Text to Speech Convertor"></textarea>
                         <button>Convert to Speech</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-content">
+                <div class="row">
+                    <div class="calc">
+                        <form>
+                            <div class="display">
+                                <input type="text" name="display">
+                            </div>
+                            <div>
+                                <input type="button" value="Clr" onclick="display.value = ''" class="opreator">
+                                <input type="button" value="Del" onclick="display.value = display.value.toString().slice(0,-1)"
+                                    class="opreator">
+                                <input type="button" value="." onclick="display.value += '.'">
+                                <input type="button" value="/" onclick="display.value += '/'" class="opreator">
+                            </div>
+                            <div>
+                                <input type="button" value="7" onclick="display.value += '7'">
+                                <input type="button" value="8" onclick="display.value += '8'">
+                                <input type="button" value="9" onclick="display.value += '9'">
+                                <input type="button" value="*" onclick="display.value += '*'" class="opreator">
+                            </div>
+                            <div>
+                                <input type="button" value="4" onclick="display.value += '4'">
+                                <input type="button" value="5" onclick="display.value += '5'">
+                                <input type="button" value="6" onclick="display.value += '6'">
+                                <input type="button" value="-" onclick="display.value += '-'" class="opreator">
+                            </div>
+                            <div>
+                                <input type="button" value="1" onclick="display.value += '1'">
+                                <input type="button" value="2" onclick="display.value += '2'">
+                                <input type="button" value="3" onclick="display.value += '3'">
+                                <input type="button" value="+" onclick="display.value += '+'" class="opreator">
+                            </div>
+                            <div>
+                                <input type="button" value="00" onclick="display.value += '00'">
+                                <input type="button" value="0" onclick="display.value += '0'">
+                                <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
