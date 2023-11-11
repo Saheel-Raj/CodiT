@@ -235,6 +235,8 @@ header.sticky {
     justify-content: space-between;
 }
 
+/* about */
+
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
