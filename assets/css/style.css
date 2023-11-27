@@ -61,10 +61,10 @@ header {
     letter-spacing: 1px;
 }
 
-.logo-vid {
+/* .logo-vid {
     width: 20%;
     height: auto;
-}
+} */
 
 span {
     color: var(--main-color);
@@ -105,7 +105,7 @@ section {
 
 .home {
     position: relative;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-image: var(--background);
     background-size: cover;
@@ -646,6 +646,10 @@ form textarea {
 }
 
 @media (max-width: 480px) {
+    *{
+        font-family: cursive;
+    }
+
     .layer h5 {
         font-size: 18px;
         font-weight: 500;
