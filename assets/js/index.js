@@ -22,20 +22,12 @@ window.onscroll = () => {
 }
 // text
 
-(function () {
-  var words = [
-    "Saheel",
-    "Raj",
-    "Prasad",
-    "..."
-  ],
-    i = 0;
-  setInterval(function () {
-    $('#words').fadeOut(function () {
-      $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
-    });
-  }, 1500)
-})();
+var type = new Typed(".auto-type",{
+  strings: ["Saheel","Raj", "Prasad"],
+  typeSpeed: 150,
+  backSpeed: 150,
+  loop: true
+})
 
 // tos
 

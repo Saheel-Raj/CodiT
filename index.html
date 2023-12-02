@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/quote.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/math.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
@@ -26,7 +27,7 @@
     <!-- home-nav -->
 
     <header>
-        
+
         <a href="https://github.com/Saheel-Raj" class="logo"><span>C</span>odi<span>T</span>...</a>
 
         <ul class="navlist">
@@ -34,8 +35,8 @@
             <li><a href="#about"><i class='bx bx-info-circle'></i> AboutMe</a></li>
             <!-- <li><a href="#tutorials">Tutorials</a></li> -->
             <li><a href="#more"><i class='bx bx-pencil'></i> Projects</a></li>
+            <li><a href="#math-zone"><i class='bx bx-math'></i> Math Zone</a></li>
             <li><a href="#contact"><i class='bx bxl-gmail'></i> Contact</a></li>
-            <li><a href=""><i class='bx bxl-instagram'></i> Instagram</a></li>
         </ul>
 
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -49,7 +50,9 @@
                 <span class="one"><a>Hello</a>,</span>
                 <span class="two">I'm</span>
             </div>
-            <h1 id="words">Saheel</h1>
+            <div class="container">
+                <h1><Span class="auto-type" style="color: #6e58f5;"></Span></h1>
+            </div>
             <p>Hello users this is my portfolio website, it contains my information like about me, my portfolio and
                 contact info and so on. In future I will make sure to make some
                 tutorials related to HTML, CSS ,Basic-256, etc.</p>
@@ -80,25 +83,6 @@
         </div>
 
     </section>
-
-    <!-- tutorials -->
-    <!-- <section class="tutorials" id="tutorials">
-        <div class="main-text">
-            <p>Video Tutorials</p>
-            <h2>Let's<br><span>Code </span></h2>
-        </div>
-
-        <div class="tutorials-content">
-            <h2>Comming Soon...</h2>
-            <video src="img/logo.mp4" class="logo-vid" autoplay loop muted></video>
-        </div>
-        <br>
-        <div class="colpic">
-            <h5>Colour Picker (only for pc)</h5><br>
-            <input type="color" class="colormenu" value="#15802c" title="for pc">
-        </div>
-
-    </section> -->
 
     <!-- more-main -->
     <section class="more" id="more">
@@ -163,7 +147,8 @@
                         <blockquote id="quote">Loading...</blockquote>
                         <span class="quotespan" id="author">Loading...</span>
                         <div class="quote-btn-div">
-                            <div class="quote-btn" onclick="urlquote(api_url)">Next Quote <i class='bx bx-arrow-from-left'></i></div>
+                            <div class="quote-btn" onclick="urlquote(api_url)">Next Quote <i
+                                    class='bx bx-arrow-from-left'></i></div>
                             <!-- bx-arrow-from-left  -->
                         </div>
                     </div>
@@ -179,8 +164,8 @@
                             </div>
                             <div>
                                 <input type="button" value="Clr" onclick="display.value = ''" class="opreator">
-                                <input type="button" value="Del" onclick="display.value = display.value.toString().slice(0,-1)"
-                                    class="opreator">
+                                <input type="button" value="Del"
+                                    onclick="display.value = display.value.toString().slice(0,-1)" class="opreator">
                                 <input type="button" value="." onclick="display.value += '.'">
                                 <input type="button" value="/" onclick="display.value += '/'" class="opreator">
                             </div>
@@ -205,7 +190,8 @@
                             <div>
                                 <input type="button" value="00" onclick="display.value += '00'">
                                 <input type="button" value="0" onclick="display.value += '0'">
-                                <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal">
+                                <input type="button" value="=" onclick="display.value = eval(display.value)"
+                                    class="equal">
                             </div>
                         </form>
                     </div>
@@ -214,6 +200,32 @@
 
         </div>
     </section>
+
+    <!-- tutorials -->
+    <section class="math-zone" id="math-zone">
+        <div class="main-text">
+            <h2><br><span>Math </span>Zone</h2>
+            <p>Just for Math lovers</p>
+        </div>
+
+        <h1 style="text-align: center;">Explore :</h1><br><br>
+
+        <div class="math-zone-container">
+
+            <div class="box-math">
+                <div class="box-img-math"><img src="assets/img/game.jpeg" alt="picture"></div>
+                <div class="box-info-math">
+                    <h1>Link will update soon</h1>
+                    <p>Site is in testing purpose it will update before 1st Jan 2024.</p>
+                    <div class="box-btn-math">
+                        <h5><a href="#home">Comming Soon</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <!-- contact-main-->
     <section class="contact" id="contact">
 
@@ -231,6 +243,7 @@
             </form>
         </div><br><br>
 
+        </div>
     </section>
 
     <!-- footer-last -->
@@ -242,7 +255,7 @@
     </section>
 
     <!-- js -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 

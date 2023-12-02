@@ -12,6 +12,7 @@
     --bg-color: #2a2a2a;
     /* --bg-color: #333633; */
     --second-bg-color: #202020;
+    --math-bg-color: rgba(27, 54, 71, 0.414);
     --text-color: #fff;
     /* --second-text-color: #cac1ce; */
     --second-color: #ccc;
@@ -151,7 +152,6 @@ section {
     padding: 2px;
     font-size: var(--big-font);
     font-weight: 700;
-    color: #2f778a;
     /* background: rgba(11, 178, 239, 0.108); */
     list-style: 1.1;
     margin: 0 0 8px;
@@ -275,10 +275,9 @@ header.sticky {
 
 /* .tutorials-content (new content will be styling here)*/
 
-/**/
-/* .tutorials {
-    background: var(--bg-color);
-}*/
+ .math-zone {
+    background: var(--math-bg-color);
+}
 
 .main-text {
     text-align: center;
@@ -294,16 +293,6 @@ header.sticky {
     font-size: var(--h2-font);
     line-height: 1;
 }
-
-/* .colormenu {
-    width: 100%;
-    height: 50px;
-    border-radius: 20px;
-    outline: none;
-    background: #000000;
-    border: none;
-    padding: 8px;
-} */
 
 /**/
 .more {
@@ -648,47 +637,9 @@ form textarea {
     }
 }
 
-/* @media (max-width: 840px) {
-    #menu-icon {
-        display: block;
-    }
-
-    .navlist {
-        position: absolute;
-        top: -1000px;
-        right: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        background: var(--second-bg-color);
-        text-align: left;
-        transition: all 0.45s ease;
-    }
-
-    .navlist a {
-        display: block;
-        margin: 17px;
-        font-size: 20px;
-        transition: all 0.45s ease;
-        color: var(--text-color);
-    }
-
-    .navlist a:hover {
-        color: var(--main-color);
-    }
-
-    .navlist a.active {
-        color: var(--text-color);
-    }
-
-    .navlist.open {
-        top: 100%;
-    }
-} */
-
 @media (max-width: 480px) {
     *{
-        font-family: cursive;
+        font-family: sans-serif;
     }
 
     .layer h5 {
