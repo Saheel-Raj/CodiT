@@ -24,8 +24,8 @@ window.onscroll = () => {
 
 var type = new Typed(".auto-type",{
   strings: ["Saheel","Raj", "Prasad"],
-  typeSpeed: 150,
-  backSpeed: 150,
+  typeSpeed: 120,
+  backSpeed: 130,
   loop: true
 })
 
