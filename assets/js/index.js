@@ -31,41 +31,60 @@ var type = new Typed(".auto-type",{
 
 // tos
 
-const textarea = document.querySelector("textarea");
-const button = document.querySelector("button");
-let isSpeaking = true;
+const textarea = document.querySelector("textarea"),
+voiceList = document.querySelector("select"),
+speechBtn = document.querySelector("button");
 
-const textToSpeech = () => {
-  const synth = window.speechSynthesis;
-  const text = textarea.value;
+let synth = speechSynthesis,
+isSpeaking = true;
 
-  if (!synth.speaking && text) {
-    const utternace = new SpeechSynthesisUtterance(text);
-    synth.speak(utternace);
-  }
+voices();
 
-  if (text.length > 50) {
-    if (synth.speaking && isSpeaking) {
-      button.innerText = "Pause";
-      synth.resume();
-      isSpeaking = false;
-    } else {
-      button.innerText = "Resume";
-      synth.pause();
-      isSpeaking = true;
+function voices(){
+    for(let voice of synth.getVoices()){
+        let selected = voice.name === "Google US English" ? "selected" : "";
+        let option = `<option value="${voice.name}" ${selected}>${voice.name} (${voice.lang})</option>`;
+        voiceList.insertAdjacentHTML("beforeend", option);
     }
-  } else {
-    isSpeaking = false;
-    window.speechSynthesis.getVoices()[1];
-    button.innerText = "Speaking";
-  }
+}
 
-  setInterval(() => {
-    if (!synth.speaking && !isSpeaking) {
-      isSpeaking = true;
-      button.innerText = "Convert to Speech";
+synth.addEventListener("voiceschanged", voices);
+
+function textToSpeech(text){
+    let utterance = new SpeechSynthesisUtterance(text);
+    for(let voice of synth.getVoices()){
+        if(voice.name === voiceList.value){
+            utterance.voice = voice;
+        }
     }
-  });
-};
+    synth.speak(utterance);
+}
 
-button.addEventListener("click", textToSpeech);
+speechBtn.addEventListener("click", e =>{
+    e.preventDefault();
+    if(textarea.value !== ""){
+        if(!synth.speaking){
+            textToSpeech(textarea.value);
+        }
+        if(textarea.value.length > 80){
+            setInterval(()=>{
+                if(!synth.speaking && !isSpeaking){
+                    isSpeaking = true;
+                    speechBtn.innerText = "Convert To Speech";
+                }else{
+                }
+            }, 500);
+            if(isSpeaking){
+                synth.resume();
+                isSpeaking = false;
+                speechBtn.innerText = "Pause Speech";
+            }else{
+                synth.pause();
+                isSpeaking = true;
+                speechBtn.innerText = "Resume Speech";
+            }
+        }else{
+            speechBtn.innerText = "Convert To Speech";
+        }
+    }
+});

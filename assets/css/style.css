@@ -23,7 +23,6 @@
     --p-font: 1.1rem;
     --background: url(https://images.pexels.com/photos/1295569/pexels-photo-1295569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     --background-2: url(background.svg);
-    /* --background: url(https://images.pexels.com/photos/1295569/pexels-photo-1295569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
     /*   original   --background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);*/
 }
 
@@ -63,11 +62,6 @@ header {
     font-weight: 700;
     letter-spacing: 1px;
 }
-
-/* .logo-vid {
-    width: 20%;
-    height: auto;
-} */
 
 span {
     color: var(--main-color);
@@ -205,7 +199,7 @@ section {
     transition: all 0.45s ease;
 }
 
-.btn2:hover{
+.btn2:hover {
     color: #ffffff;
     /* background: #933ebe96; */
 }
@@ -213,7 +207,7 @@ section {
 .btn2 span i {
     height: 50px;
     width: 50px;
-    background: var(--main-color);
+    background: #6b5ff1;
     color: var(--text-color);
     display: flex;
     align-items: center;
@@ -275,7 +269,7 @@ header.sticky {
 
 /* .tutorials-content (new content will be styling here)*/
 
- .math-zone {
+.math-zone {
     background: var(--math-bg-color);
 }
 
@@ -374,41 +368,105 @@ header.sticky {
 
 /*===== tosc =====*/
 
-.container-speach {
-    width: 100%;
+.wrapper {
+    width: auto;
+    padding: 25px 30px;
+    border-radius: 7px;
     background: var(--bg-color);
-    border-radius: 12px;
-    padding: 22px 15%;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
 }
 
-textarea {
-    width: 100%;
-    height: 180px;
-    background: var(--second-bg-color);
-    color: var(--text-color);
-    border-radius: 8px;
-    margin: 5px 0;
-    padding: 10px 15px;
-    resize: none;
+.wrapper h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.wrapper form {
+    margin: 25px 0 15px;
+}
+
+form .row {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+form .row label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form .row:nth-child(2) label {
+    font-size: 17px;
+}
+
+form :where(textarea, select, button) {
     outline: none;
-    border: 1px solid var(--second-bg-color);
-}
-
-button {
     width: 100%;
-    padding: 14px 0;
+    height: 100%;
     border: none;
-    border-radius: 8px;
-    color: #fff;
-    background: var(--main-color);
-    cursor: pointer;
-    transition: all 0.3s ease;
+    border-radius: 5px;
 }
 
-button:hover {
-    background: #333633;
+form .row textarea {
+    resize: none;
+    height: 110px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 1px solid #999;
 }
+
+form .row textarea::-webkit-scrollbar {
+    width: 0px;
+}
+
+form .row .outer {
+    height: 47px;
+    display: flex;
+    /* padding: 0 10px; */
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: 3.5px solid #999;
+}
+
+form .row select {
+    font-size: 14px;
+    background: #202020;
+    padding: 0 10px;
+    color: #fff;
+}
+
+form .row select::-webkit-scrollbar {
+    width: 8px;
+}
+
+form .row select::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+form .row select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+form button {
+    height: 52px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: var(--main-color);
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: var(--second-bg-color);
+    color: #fff;
+}
+
+/* ====contact==== */
 
 .contact {
     background: var(--bg-color);
@@ -578,7 +636,7 @@ form textarea {
     }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     #menu-icon {
         display: block;
     }
@@ -638,7 +696,7 @@ form textarea {
 }
 
 @media (max-width: 480px) {
-    *{
+    * {
         font-family: sans-serif;
     }
 
@@ -651,6 +709,14 @@ form textarea {
         font-size: 0.8em;
         line-height: 1.8;
         color: var(--text-color);
+    }
+}
+
+@media (max-width: 320px) {
+
+    .more,
+    .more .calc {
+        display: none;
     }
 }
 
