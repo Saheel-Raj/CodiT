@@ -12,17 +12,16 @@
     --bg-color: #2a2a2a;
     /* --bg-color: #333633; */
     --second-bg-color: #202020;
-    --math-bg-color: rgba(27, 54, 71, 0.414);
+    --math-bg-color: #d38a254b;
     --text-color: #fff;
     /* --second-text-color: #cac1ce; */
     --second-color: #ccc;
-    --main-color: #5e71e3;
+    --main-color: #e08f1f;
     /* main color #15802c */
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
     --background: url(https://images.pexels.com/photos/1295569/pexels-photo-1295569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    --background-2: url(background.svg);
     /*   original   --background: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);*/
 }
 
@@ -84,7 +83,7 @@ span {
 .navlist a:hover {
     color: var(--main-color);
     background: var(--background);
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
 }
 
 #menu-icon {
@@ -104,7 +103,8 @@ section {
     position: relative;
     height: 90vh;
     width: 100%;
-    background-image: var(--background-2);
+    /* background-image: var(--background-2); */
+    background-image: url(8700766_44444.svg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -174,14 +174,14 @@ section {
     letter-spacing: 1px;
     font-weight: 600;
     transition: all 0.45s ease;
-    box-shadow: 0 0 5px 5px #597add47;
+    box-shadow: 0 0 5px 5px #e08f1f5a;
 }
 
 .btn:hover {
     /* transform: scale(1); */
     /* color: var(--second-text-color); */
-    background: #597add47;
-    box-shadow: 0 0 5px 5px #3e528c26;
+    background: #ac6e17;
+    box-shadow: 0 0 5px 5px #e08f1f65;
 }
 
 .btn2 {
@@ -207,7 +207,7 @@ section {
 .btn2 span i {
     height: 50px;
     width: 50px;
-    background: #6b5ff1;
+    background: var(--main-color);
     color: var(--text-color);
     display: flex;
     align-items: center;
@@ -221,7 +221,7 @@ section {
 .btn2 span i:hover {
     /* filter: grayscale(1); */
     color: var(--main-color);
-    background: #3e528c72;
+    background: #8c723e72;
     /* transform: scale(0.9); */
 }
 
@@ -675,6 +675,10 @@ form textarea {
 }
 
 @media (max-width: 920px) {
+    .home{
+        background-position: left center;
+    }
+
     .home-text h1 {
         width: 200px;
     }

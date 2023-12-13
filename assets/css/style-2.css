@@ -1,0 +1,88 @@
+.quote-box{
+    background: var(--bg-color);
+    color: var(--text-color);
+    width: auto;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px var(--second-bg-color);
+}
+
+.quote-box h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.quote-box blockquote{
+    font-size: 20px;
+    min-height: 110px;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.quote-box .quotespan{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-box .quotespan::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: var(--text-color);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-box .quote-btn-div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-box .quote-btn{
+    background: #fff;
+    color: #2b2b2b;
+    font-size: 1.2em;
+    border-radius: 25px;
+    border: 1px solid #1b1b1b;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* .quote-box .quote-btn:hover{
+    background: ;
+} */
+
+@media (max-width: 480px){
+    .quote-box{
+        width: auto;
+        padding: 15px;
+    }
+
+    .quote-box blockquote{
+        font-size: 15px;
+        min-height: 100px;
+    }
+
+}
+
+/* @media (max-width: 400px){
+    .calc form input div{
+        font-size: 15px;
+        margin: 5px;
+    }
+} */

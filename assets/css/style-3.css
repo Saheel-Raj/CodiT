@@ -1,4 +1,4 @@
-.math-zone-container{
+.math-zone-container {
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center; */
@@ -11,28 +11,28 @@
     margin-top: 5px;
 }
 
-.box-math{
+.box-math {
     width: 350px;
     background: var(--second-bg-color);
     padding: 8px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px #22355e49;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px 10px#e08f1f1d;
 }
 
-.box-img-math img{
+.box-img-math img {
     width: 100%;
     height: 160px;
     border-radius: 15px;
     object-fit: cover;
-    object-position: top right;
+    object-position: center;
     /* box-shadow: 1px 1px 1px 1px #22355e14; */
 }
 
-.box-info-math{
+.box-info-math {
     margin: 12px;
 }
 
-.box-info-math h1{
+.box-info-math h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@
     text-align: center;
 }
 
-.box-info-math p{
+.box-info-math p {
     margin-top: 18px;
     color: #666464;
     font-size: 20px;
@@ -49,7 +49,7 @@
     text-align: center;
 }
 
-.box-btn-math a{
+.box-btn-math a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,7 @@
     transition: .3s;
 }
 
-.box-btn-math a:hover{
-    background: var(--math-bg-color);
+.box-btn-math a:hover {
+    background: #e08f1f51;
     color: var(--text-color);
 }
