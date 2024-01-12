@@ -1,236 +1,382 @@
-<!-- hello i am saheel raj prasad of class 8 this is my website that uploaded on github with lisence no one has right to copy my content -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="assets/img/favicon.jpg" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+   <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Saheel.com to CodiT - My Portfolio Website</title>
-
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style-2.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style-3.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <link rel="shortcut icon" href="img/logo.jpg">
+   <title>CodIt - My Portfolio Website</title>
 </head>
 
 <body>
-    <!-- home-nav -->
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">
+            <span class="nav__logo-circle">C</span>
+            <span class="nav__logo-name">CodIt.</span>
+         </a>
 
-    <header>
+         <div class="nav__menu" id="nav-menu">
+            <span class="nav__title">Menu</span>
 
-        <a href="https://github.com/Saheel-Raj" class="logo"><span>C</span>odi<span>T</span>...</a>
+            <h3 class="nav__name">Saheel</h3>
 
-        <ul class="navlist">
-            <li><a href="#home" class="active"><i class='bx bx-home-alt-2'></i> Home</a></li>
-            <li><a href="#about"><i class='bx bx-info-circle'></i> AboutMe</a></li>
-            <!-- <li><a href="#tutorials">Tutorials</a></li> -->
-            <li><a href="#more"><i class='bx bx-pencil'></i> Projects</a></li>
-            <li><a href="#math-zone"><i class='bx bx-math'></i> Math Zone</a></li>
-            <li><a href="#contact"><i class='bx bxl-gmail'></i> Contact</a></li>
-        </ul>
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#home" class="nav__link ">Home</a><!-- active-link -->
+               </li>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+               <li class="nav__item">
+                  <a href="#about" class="nav__link">About Me</a>
+               </li>
 
-    </header>
+               <li class="nav__item">
+                  <a href="#projects" class="nav__link">Projects</a>
+               </li>
 
-    <!-- home-main -->
+               <li class="nav__item">
+                  <a href="#contact" class="nav__link nav__link-bottom">Contact Me</a>
+               </li>
+            </ul>
 
-    <section class="home" id="home">
-        <div class="home-text">
-            <div class="slide">
-                <span class="one"><a>Hey!</a></span>
-                <span class="two">I'm</span>
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
             </div>
-            <div class="container">
-                <h1><Span class="auto-type" style="color: #e08f1f;"></Span></h1>
+         </div>
+
+         <div class="nav__buttons">
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-4-line"></i>
             </div>
-            <p>Hello users this is my website, it contains my information like about me, my projects, 
-                contact info and so on. In future I will make sure to make some
-                tutorials related to HTML, CSS ,Basic-256, etc.</p>
-            <div class="button">
-                <a href="#about" class="btn">About Me</a>
+         </div>
+      </nav>
+   </header>
 
-                <a href="https://instagram.com/codit_raj" class="btn2"><span><i class='bx bxl-instagram'></i></span>Instagram</a>
-            </div>
-        </div>
+   <main class="main">
 
-    </section>
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <h1 class="home__name">Saheel Raj</h1>
+            <!-- Saheel Raj -->
 
-    <!-- about-main -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="assets/img/my-photo.jpeg" alt="saheel-photo">
-        </div>
+            <div class="home__perfil">
+               <div class="home__image">
+                  <img src="assets/img/home-perfil.jpeg" alt="image" class="home__img">
+                  <div class="home__shadow"></div>
 
-        <div class="about-text">
-            <h2>About<span>Me</span></h2>
-            <p>Hi I am <span>Saheel Raj Prasad</span>...<br><br>With experience in web design. I maintain a healthy
-                balance between functionally, studies and visual inmpact in all my work. I believe that every place of
-                design can be a works of art. <br><br>I love my art and enjoy each new project as I made it. Feel free
-                to have a look at my portfilo and don't hesitate to contact me if I can be of service to you. Thanks for
-                viewing bye!</p>
-            <!-- <a href="#tutorials" class="btn">Tutorials</a> -->
-            <a href="come.html" class="btn">---------</a>
-        </div>
+                  <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
+                  <img src="assets/img/random-lines.svg" alt="" class="home__line">
 
-    </section>
+                  <div class="geometric-box"></div>
+               </div>
 
-    <!-- more-main -->
-    <section class="more" id="more">
-        <div class="main-text">
-            <p>More</p>
-            <h2><span>Games</span> and <span>More</span></h2>
-        </div>
-
-        <!-- <div class="main-text">
-            <p>with sponsored</p>
-        </div> -->
-
-        <div class="morecontainer">
-            <div class="more-content">
-                <div class="row">
-                    <img src="assets/img/game.jpeg" alt="game-img-1">
-                    <div class="layer">
-                        <h5>Games and More</h5>
-                        <p>Poki is an online gaming website where you
-                            can play many games without downloading it. (Sponsored)</p>
-                        <a href="https://poki.com"><i class='bx bx-game'></i></a>
-                    </div>
-                </div>
+               <div class="home__social">
+                  <a href="https://instagram.com/codit_raj" target="_blank" class="home__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+                  <a href="#contact" class="home__social-link">
+                     <i class="ri-mail-line"></i>
+                  </a>
+                  <a href="https://github.com/Saheel-Raj/CodiT" target="_blank" class="home__social-link">
+                     <i class="ri-github-line"></i>
+                  </a>
+               </div>
             </div>
 
-            <div class="more-content">
-                <div class="row">
-                    <img src="https://www.codester.com/static/uploads/items/9481/preview/001.jpg" alt="game-img-2">
-                    <div class="layer">
-                        <h5>Stone Paper Scissors</h5>
-                        <a href="https://saheel-raj.github.io/Stone_Paper_Scissor/"><i class='bx bx-cut'></i></a>
-                    </div>
-                </div>
+            <div class="home__info">
+               <p class="home__description">
+                  <b>Beginner Student</b>, with knowledge in web degisn & development, I offer my best skills for resulting in
+                  quality work.
+               </p>
+
+               <a href="#about" class="home__scroll">
+                  <div class="home__scroll-box">
+                     <i class="ri-arrow-down-s-line"></i>
+                  </div>
+
+                  <span class="home__scroll-text">Scroll Down</span>
+               </a>
+            </div>
+         </div>
+      </section>
+
+<!-- =============================ABOUT=============================== -->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <h2 class="section__title-1"><span>About Me.</span></h2>
+
+            <div class="about__perfil">
+               <div class="about__image">
+                  <img src="assets/img/about-perfil.jpg" alt="about-img" class="about__img">
+
+                  <div class="about__shadow"></div>
+
+                  <div class="geometric-box"></div>
+                  <img src="assets/img/random-lines.svg" alt="" class="about__line">
+                  <div class="about__box"></div>
+               </div>
             </div>
 
-            <div class="more-content">
-                <div class="row">
-                    <img src="assets/img/toggle.jpeg" alt="tool-img-1">
-                    <div class="layer">
-                        <h5>Toggle</h5>
-                        <p>Toggle is a alternate or my third project of a search engine inspired by Google. You can
-                            search anything and it's redirect to Google</p>
-                        <a href="https://saheel-raj.github.io/Toggle/"><i class='bx bx-search'></i></a>
-                    </div>
-                </div>
+            <div class="about__info">
+               <p class="about__description">
+                  With experience in web design. I maintain a healthy
+                  balance between functionally, studies and visual inmpact in all my work. I believe that every place of
+                  design can be a works of art. <br><br>I love my art and enjoy each new project as I made it. Feel free
+                  to have a look at my portfilo and don't hesitate to contact me if I can be of service to you. Thanks
+                  for
+                  viewing bye!
+               </p>
+
+               <ul class="about__list">
+                  <li class="about__item">
+                     As a Beginner <b>My Skills Are</b> HTML, CSS, Bootstrap and GitHub.
+                  </li>
+               </ul>
+
+               <div class="about__buttons">
+                  <a href="#contact" class="button"><i class="ri-send-plane-line"> Contact Me</i></a>
+
+                  <a href="https://instagram.com/codit_raj" target="_blank" class="button__ghost"><i class="ri-instagram-line"></i></a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+         <h2 class="section__title-2">
+            <span>Services</span>
+         </h2>
+
+         <div class="services__container container grid">
+            <article class="services__card">
+               <div class="services__border"></div>
+
+               <div class="services__content">
+                  <div class="services__icon">
+                     <div class="services__box">
+                        <i class="ri-layout-4-line"></i>
+                     </div>
+
+                     <h2 class="services__title">Web Design</h2>
+
+                     <p class="services_description">
+                        So beautiful and elegent designs with interfaces looking like a wow and are intuitive, efficient and pleasent to use for the user...
+                     </p>
+                  </div>
+               </div>
+            </article>
+
+            <article class="services__card">
+               <div class="services__border"></div>
+
+               <div class="services__content">
+                  <div class="services__icon">
+                     <div class="services__box">
+                        <i class="ri-code-box-line"></i>
+                     </div>
+
+                     <h2 class="services__title">Web Development</h2>
+
+                     <p class="services_description">
+                        Custom web development tailored to your specifications, designed to provide a flawless user experience...
+                     </p>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+         <h2 class="section__title-1"><span>Projects.</span></h2>
+
+         <div class="projects__container container grid">
+            <!-- toggle -->
+            <article class="projects__card">
+               <div class="projects__image">
+                  <img src="assets/img/project-1.jpeg" alt="project-1" class="projects__img">
+
+                  <a href="https://saheel-raj.github.io/Toggle/" class="projects__button button">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+               </div>
+
+               <div class="projects__content">
+                  <h3 class="projects__subtitle">Website</h3>
+                  <h2 class="projects__title">Toggle.com</h2>
+
+                  <p class="projects__description">
+                     Projects that you carry out in the design and structures af the layout, showing the design at the client's request.
+                  </p>
+               </div>
+
+               <div class="projects__buttons">
+                  <a href="https://github.com/Saheel-Raj/Toggle" target="_blank" class="projects__link">
+                     <i class="ri-github-line"></i> View
+                  </a>
+               </div>
+
+            </article>
+            <!-- tool and game center -->
+            <article class="projects__card">
+               <div class="projects__image">
+                  <img src="assets/img/project-2.jpg" alt="project-2" class="projects__img">
+
+                  <a class="projects__button button">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+               </div>
+
+               <div class="projects__content">
+                  <h3 class="projects__subtitle">Website</h3>
+                  <h2 class="projects__title">Tool and Game Center</h2>
+
+                  <p class="projects__description">
+                     More details will come soon.
+                  </p>
+               </div>
+
+               <div class="projects__buttons">
+                  <a target="_blank" class="projects__link">
+                     <i class="ri-github-line"></i> View
+                  </a>
+               </div>
+
+            </article> 
+            <article class="projects__card">
+               <div class="projects__image">
+                  <img src="assets/img/project-3.jpg" alt="website old" class="projects__img">
+
+                  <a href="https://saheel-raj.github.io/saheel-com/" class="projects__button button">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+               </div>
+
+               <div class="projects__content">
+                  <h3 class="projects__subtitle">Website</h3>
+                  <h2 class="projects__title">Saheel.com</h2>
+
+                  <p class="projects__description">
+                     Wanna visit my old website? yes! you can visit for some days. Until my new website completes properly you can visit.
+                  </p>
+               </div>
+
+               <div class="projects__buttons">
+                  <a href="https://github.com/Saheel-Raj/saheel-com" target="_blank" class="projects__link">
+                     <i class="ri-github-line"></i> View
+                  </a>
+               </div>
+
+            </article>
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <div class="contact__container grid">
+            <div class="contact__data">
+               <h2 class="section__title-2">
+                  <span>Contact Me.</span>
+               </h2>
+
+               <p class="contact__description-1">
+                  I will read all emails. Send me any massage you want and I'll get back to you.
+               </p>
+               <p class="contact__description-2">
+                  I need your <b>Name</b> and <b>Email Address</b>, but you won't receive anything other than your reply.
+               </p>
+
+               <div class="geometric-box"></div>
             </div>
 
-            <div class="more-content">
-                <div class="row">
-                    <div class="wrapper">
-                        <h1>Text To Speech</h1>
-                        <form action="#">
-                          <div class="row">
-                            <label>Enter Text</label>
-                            <textarea></textarea>
-                          </div>
-                          <div class="row">
-                            <label>Select Voice</label>
-                            <div class="outer">
-                              <select></select>
-                            </div>
-                          </div>
-                          <button>Convert To Speech</button>
-                        </form>
-                      </div>
-                </div>
+            <div class="contact__mail">
+               <h2 class="contact__title">Send your Feedback</h2>
+
+               <form action="" class="contact__form" id="contact-form">
+                  <div class="contact__group">
+                     <div class="contact__box">
+                        <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
+                        <label for="name" class="contact__label">First Name</label>
+                     </div>
+
+                     <div class="contact__box">
+                        <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
+                        <label for="email" class="contact__label">Email Address</label>
+                     </div>
+                  </div>
+
+                     <div class="contact__box">
+                        <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                        <label for="subject" class="contact__label">Subject</label>
+                     </div>
+
+                     <div class="contact__box contact__area">
+                        <textarea name="user_massage" id="massage" class="contact__input" placeholder="Massage" required></textarea>
+                        <label for="massage" class="contact__label">Massage</label>
+                     </div>
+
+                     <p class="contact__message" id="contact-message"></p>
+
+                     <button type="submit" class="contact__button button">
+                        <i class="ri-send-plane-line"></i> Send Massage
+                     </button>
+               </form>
             </div>
 
-            <div class="more-content">
-                <div class="row">
-                    <div class="quote-box">
-                        <h2>Motivational <span>Quote</span></h2>
-                        <blockquote id="quote">Loading...</blockquote>
-                        <span class="quotespan" id="author">Loading...</span>
-                        <div class="quote-btn-div">
-                            <div class="quote-btn" onclick="urlquote(api_url)">Next Quote <i
-                                    class='bx bx-arrow-from-left'></i></div>
-                            <!-- bx-arrow-from-left  -->
-                        </div>
-                    </div>
-                </div>
+            <div class="contact__social">
+               <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
+               
+               <div class="contact__social-data">
+                  <div class="">
+                     <p class="contact__social-description-1">Does not send emails?</p>
+                     <p class="contact__social-description-2">Write me on my social networks</p>
+                  </div>
+                  <div class="contact__social-links">
+                     <a href="https://instagram.com/codit_raj" target="_blank" class="contact__social-link"><i class="ri-instagram-line"></i></a>
+                  </div>
+               </div>
             </div>
+         </div>
+      </section>
+   </main>
 
-        </div>
-    </section>
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <ul class="footer__links">
+            <li>
+               <a href="#home" class="footer__link">Home</a>
+            </li>
+            <li>
+               <a href="#about" class="footer__link">About</a>
+            </li>
+            <li>
+               <a href="#projects" class="footer__link">Projects</a>
+            </li>
+         </ul>
 
-    <!-- tutorials -->
-    <section class="math-zone" id="math-zone">
-        <div class="main-text">
-            <h2><br><span>Math </span>Zone</h2>
-            <p>Just for Math lovers</p>
-        </div>
+         <span class="footer__copy">&#169; All Rights Reserves By <a href="">CodIt | GitHub</a></span>
+      </div>
+   </footer>
 
-        <h1 style="text-align: center;">Explore :</h1><br><br>
+   <!--========== SCROLL UP ==========-->
+   <a href="#home" class="scrollup" id="scroll-up"><i class="ri-arrow-up-s-line"></i></a>
 
-        <div class="math-zone-container">
 
-            <div class="box-math">
-                <div class="box-img-math"><img src="assets/img/noimage.png" alt="picture"></div>
-                <div class="box-info-math">
-                    <h1>Link will update soon</h1>
-                    <p>This page is in testing purpose it will update before 1st Jan 2024.</p>
-                    <div class="box-btn-math">
-                        <h5><a href="#home">Comming Soon</a></h5>
-                    </div>
-                </div>
-            </div>
-        </div>
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="assets/js/scrollreveal.min.js"></script>
 
-    </section>
-
-    <!-- contact-main-->
-    <section class="contact" id="contact">
-
-        <br>
-        <div class="contact-form">
-            <h1>Contact <span>Me</span></h1>
-            <p> Hey! users, need more inprovement in my website?<br>
-                So contact me via email: blockeeb@gmail.com or from here.</p>
-            <form action="https://formspree.io/f/xlekzryy" method="POST" onsubmit="sendEmail(); reset(); return false;">
-                <input type="" id="name" placeholder="Your Name" required>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                <textarea name="message" id="message" placeholder="Message with your name" cols="15"
-                    rows="10"></textarea>
-                <input type="submit" name="" value="Submit" class="btn">
-            </form>
-        </div><br><br>
-
-        </div>
-    </section>
-
-    <!-- footer-last -->
-
-    <section class="end">
-        <div class="last-text">
-            <p>©️ 2023 GitHub/Saheel | All Right Reserved</p>
-        </div>
-    </section>
-
-    <!-- js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
-    <!-- ---------------------------------------------------------------------------------->
-    <script type="text/javascript" src="assets/js/index-script.js"></script>
-    <script type="text/javascript" src="assets/js/index-script-2.js"></script>
-    <script type="text/javascript" src="assets/js/word-list.js"></script>
+   <!--=============== JS ===============-->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   <script src="assets/js/main.js"></script>
 </body>
 
 </html>
