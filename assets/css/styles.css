@@ -665,7 +665,7 @@ body.dark-theme {
 
 /*=============== SERVICES ===============*/
 .services__container {
-  grid-template-columns: 250px;
+  grid-template-columns: 260px;
   justify-content: center;
   row-gap: 2rem;
   padding-top: 1rem;
@@ -961,7 +961,7 @@ body.dark-theme {
 .contact__social {
   display: grid;
   row-gap: 1rem;
-  background-color: #2e2e2e;
+  /* background-color: #2e2e2e; */
   padding-block: 1rem 2rem;
   text-align: center;
 }
@@ -978,13 +978,13 @@ body.dark-theme {
 }
 
 .contact__social-description-1 {
-  color: var(--text-color-light);
+  color: var(--title-color);
   font-size: var(--normal-font-size);
   margin-bottom: 0.5rem;
 }
 
 .contact__social-description-2 {
-  color: var(--white-color);
+  color: var(--title-color);
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
 }
@@ -997,8 +997,9 @@ body.dark-theme {
 
 .contact__social-link {
   background-color: var(--black-color-light);
-  padding: 6px;
-  color: var(--white-color);
+  padding: 10px;
+  color: var(--title-color);
+  font-size: 1.5em;
   display: grid;
   place-items: center;
   transition: background-color .3s;
@@ -1138,7 +1139,7 @@ body.dark-theme {
   .home__container,
   .about__container,
   .projects__container {
-    grid-template-columns: 250px;
+    grid-template-columns: 350px;
     justify-content: center;
   }
 
