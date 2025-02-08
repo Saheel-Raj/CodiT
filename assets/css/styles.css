@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/*.bebas-neue-regular {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+}*/
 
 :root {
   --header-height: 3.5rem;
@@ -105,69 +115,72 @@ img {
 }
 
 /*========== Variables Dark theme ==========*/
-body.dark-theme {
-  /* --first-color: hsl(29, 91%, 42%); */
-  --first-color: hsl(38, 48%, 60%);
-  --black-color: hsl(0, 0%, 18%);
-  --black-color-light: hsl(0, 0%, 30%);
-  --title-color: hsl(0, 0%, 95%);
-  --text-color: hsl(0, 0%, 70%);
-  --body-color: hsl(0, 0%, 8%);
-  --container-color: hsl(0, 0%, 12%);
-  --art: hsl(0, 6%, 10%);
+@media (prefers-color-scheme: dark){
+  body.dark-theme {
+    /* --first-color: hsl(29, 91%, 42%); */
+    --first-color: hsl(38, 48%, 60%);
+    --black-color: hsl(0, 0%, 18%);
+    --black-color-light: hsl(0, 0%, 30%);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 70%);
+    --body-color: hsl(0, 0%, 8%);
+    --container-color: hsl(0, 0%, 12%);
+    --art: hsl(0, 6%, 10%);
+  }
+  
+  .dark-theme .shadow-header {
+    box-shadow: 0 1px 12px hsla(0, 0%, 0%, 0.6);
+  }
+  
+  .dark-theme .section__title-1::after,
+  .dark-theme .section__title-2::after {
+    background-color: hsla(38, 48%, 60%, 0.394);
+    /* background-color: hsla(14, 70%, 50%, 0.2) */
+  }
+  
+  .dark-theme :is(.home__arrow, .home__line, .about__line) {
+    filter: none;
+  }
+  
+  .dark-theme .home__description b {
+    background: linear-gradient(90deg, hsla(29, 91%, 42%, 0.255), hsla(29, 91%, 42%, 0.289));
+    /* background: linear-gradient(90deg, hsla(14, 80%, 50%, .3), hsla(14, 98%, 50%, 0)); */
+  }
+  
+  .dark-theme :is(.button__ghost, .services__icon i) {
+    color: var(--text-color);
+  
+  }
+  
+  .dark-theme .projects__card:hover {
+    background-color: var(--body-color);
+  }
+  
+  .dark-theme .geometric-box::after {
+    border: 3px solid var(--white-color);
+  }
+  
+  .dark-theme :is(.contact__mail, .contact__input, .contact__label) {
+    background-color: var(--container-color);
+  }
+  
+  .dark-theme .footer {
+    background-color: hsl(0, 0%, 4%);
+  }
+  
+  .dark-theme::-webkit-scrollbar {
+    background-color: hsl(0, 0%, 20%);
+  }
+  
+  .dark-theme::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 0%, 50%);
+  }
+  
+  .dark-theme::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 40%);
+  }
 }
 
-.dark-theme .shadow-header {
-  box-shadow: 0 1px 12px hsla(0, 0%, 0%, 0.6);
-}
-
-.dark-theme .section__title-1::after,
-.dark-theme .section__title-2::after {
-  background-color: hsla(38, 48%, 60%, 0.394);
-  /* background-color: hsla(14, 70%, 50%, 0.2) */
-}
-
-.dark-theme :is(.home__arrow, .home__line, .about__line) {
-  filter: none;
-}
-
-.dark-theme .home__description b {
-  background: linear-gradient(90deg, hsla(29, 91%, 42%, 0.255), hsla(29, 91%, 42%, 0.289));
-  /* background: linear-gradient(90deg, hsla(14, 80%, 50%, .3), hsla(14, 98%, 50%, 0)); */
-}
-
-.dark-theme :is(.button__ghost, .services__icon i) {
-  color: var(--text-color);
-
-}
-
-.dark-theme .projects__card:hover {
-  background-color: var(--body-color);
-}
-
-.dark-theme .geometric-box::after {
-  border: 3px solid var(--white-color);
-}
-
-.dark-theme :is(.contact__mail, .contact__input, .contact__label) {
-  background-color: var(--container-color);
-}
-
-.dark-theme .footer {
-  background-color: hsl(0, 0%, 4%);
-}
-
-.dark-theme::-webkit-scrollbar {
-  background-color: hsl(0, 0%, 20%);
-}
-
-.dark-theme::-webkit-scrollbar-thumb {
-  background-color: hsl(0, 0%, 50%);
-}
-
-.dark-theme::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(0, 0%, 40%);
-}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -403,8 +416,8 @@ body.dark-theme {
 }
 
 .home__name {
-  font-family: "Lumanosimo", cursive;
-  font-size: var(--biggest-font-size);
+  font-family: "Bebas Neue", serif;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -584,6 +597,14 @@ body.dark-theme {
   100% {
     transform: translateY(0.6rem);
     opacity: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .home__name {
+    font-family: "Bebas Neue", serif;
+    font-size: 8rem;
+    text-align: center;
   }
 }
 
