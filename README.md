@@ -17,11 +17,13 @@ I'm a front-end developer... practing my web and app development and upload it i
 
 - Update projects section.
 
-- Add Learing section
+- Add Learing section.
 
 - Fix gliches in tablet and mobile resolution.
 
-- Main color change and more!
+- Main color change and font change.
+
+- Auto theme change based on your device.
 
 
 ## Screenshots
